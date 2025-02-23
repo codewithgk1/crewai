@@ -17,7 +17,7 @@ class ExampleFlow(Flow):
             messages=[
                 {
                     "role": "user",
-                    "content": "Return the name of a random city in the world.",
+                    "content": "Return the name of a random city in the UK.",
                 },
             ],
         )
