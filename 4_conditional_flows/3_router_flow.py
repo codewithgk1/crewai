@@ -25,11 +25,11 @@ class RouterFlow(Flow[ExampleState]):
 
     @listen("success")
     def third_method(self):
-        print("Third method running")
+        print("Success method running")
 
     @listen("failed")
     def fourth_method(self):
-        print("Fourth method running")
+        print("Failed method running")
 
 
 flow = RouterFlow()
