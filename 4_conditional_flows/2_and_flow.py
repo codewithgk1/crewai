@@ -6,7 +6,7 @@ class AndExampleFlow(Flow):
     @start()
     def start_method(self):
         print("---- Start Method ----")
-        self.state["greeting"] = "Hello from the start method"
+        self.state["greeting"] = "Hello from the method 1"
 
     @listen(start_method)
     def second_method(self):
