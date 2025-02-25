@@ -17,7 +17,7 @@ class PoemFlow(Flow[PoemState]):
     @start()
     def generate_sentence_count(self):
         print("Generating sentence count")
-        self.state.sentence_count = randint(1, 5)
+        self.state.sentence_count = randint(1, 8)
 
     @listen(generate_sentence_count)
     def generate_poem(self):
