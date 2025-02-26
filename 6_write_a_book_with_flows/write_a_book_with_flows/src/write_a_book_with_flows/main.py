@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import asyncio
 from typing import List
+import warnings
 
 from crewai.flow.flow import Flow, listen, start
 from pydantic import BaseModel
@@ -11,6 +12,8 @@ from write_a_book_with_flows.crews.write_book_chapter_crew.write_book_chapter_cr
 from write_a_book_with_flows.types import Chapter, ChapterOutline
 
 from .crews.outline_book_crew.outline_crew import OutlineCrew
+
+warnings.filterwarnings("ignore", category=SyntaxWarning)
 
 
 class BookState(BaseModel):
